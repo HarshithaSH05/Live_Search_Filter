@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Live Search Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Smart Product Search</h1>
+    <input type="text" id="searchBox" placeholder="Search products...">
+
+    <!-- Category Filter Buttons -->
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="fruit">Fruit</button>
+      <button class="filter-btn" data-category="berry">Berry</button>
+      <button class="filter-btn" data-category="tropical">Tropical</button>
+      <button class="filter-btn" data-category="vegetable">Vegetable</button>
+    </div>
+
+    <!-- Item Cards -->
+    <div id="itemList">
+      <div class="card" data-category="fruit">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Apple">
+        <p>Apple</p>
+      </div>
+      <div class="card" data-category="fruit">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" alt="Banana">
+        <p>Banana</p>
+      </div>
+      <div class="card" data-category="fruit">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg" alt="Orange">
+        <p>Orange</p>
+      </div>
+      <div class="card" data-category="tropical">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCnjNWteSaFXlDtObpdEE5KnGVcs88xCSJhTzN6ain3ZMJXmkx2_bB_8jRejDK_XhBmbRs6zQp4GcRKwWCjQCOQtZV4YyqeTCNjYh50NSpg&s=10" alt="Watermelon">
+        <p>Watermelon</p>
+      </div>
+      <div class="card" data-category="tropical">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" alt="Mango">
+        <p>Mango</p>
+      </div>
+      <div class="card" data-category="tropical">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg" alt="Pineapple">
+        <p>Pineapple</p>
+      </div>
+      <div class="card" data-category="berry">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg" alt="Strawberry">
+        <p>Strawberry</p>
+      </div>
+      <div class="card" data-category="berry">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTG3D10lhRWnAB00kMfZR-XGrxRPVd46Uk1dFUhZ-xTVKZOkmBnv3dFcXKLoWy_8EdYmVuLogV53idZp368D1TFHj78BWsc8A" alt="Blueberry">
+        <p>Blueberry</p>
+      </div>
+      <div class="card" data-category="fruit">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg" alt="Kiwi">
+        <p>Kiwi</p>
+      </div>
+      <div class="card" data-category="vegetable">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEZ_B3VDH4DLTBnnOxIQFMmUyoDZWDePtPg-S7mfLNlUzGThGEtBCB268N7j5Jy_Ey4ZAsec2sYst3qCEAVQP7tTr0cQ8p1rfXlMbmFlUK&s=10" alt="Carrot">
+        <p>Carrot</p>
+      </div>
+      <div class="card" data-category="vegetable">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg" alt="Tomato">
+        <p>Tomato</p>
+      </div>
+      <div class="card" data-category="vegetable">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlw01LyJTwMZePnFplhHYJqJnRlEfB0QpQEg25Jt-kegKacYNlrO62PqlYeD1HluSHND47I1kiVjkBQ7XyusTwniQILqUjULEhTdX39fAnA&s=10" alt="Broccoli">
+        <p>Broccoli</p>
+      </div>
+    </div>
+
+    <p id="noResults" class="hidden">⚠️ No results found</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
